@@ -40,12 +40,18 @@
   margin-bottom: $m-bottom;
 }
 
-@mixin title-subtitle($font-size, $font-weight, $color, $p-bottom, $m-bottom) {
+@mixin title-subtitle($font-size, $font-weight, $color, $padding, $margin) {
   font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
-  padding-bottom: $p-bottom;
-  margin-bottom: $m-bottom;
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin paragraph($color) {
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+  color: $color;
 }
 
 // MIXIN fonts
@@ -76,6 +82,47 @@
   grid-template-columns: $columns;
   grid-template-rows: $rows;
 }
+
+// MIXIN Cards
+@mixin cards(
+  $width,
+  $max-width,
+  $margin,
+  $padding,
+  $bg-color,
+  $b-radius,
+  $shadow,
+  $f-size
+) {
+  width: $width;
+  max-width: $max-width;
+  margin: $margin;
+  padding: $padding;
+  background-color: $bg-color;
+  border-radius: $b-radius;
+  box-shadow: $shadow;
+  font-size: $f-size;
+}
+
+// Clase links para usar con @extend
+.aside-vet-links {
+  display: inline-block;
+  background-color: $bg-icons;
+  height: fit-content;
+  border-radius: 50%;
+  transition: $transition;
+}
+
+.aside-vet-links:hover {
+  background: linear-gradient(
+    360deg,
+    rgba(113, 161, 220, 1) 0%,
+    rgba(173, 103, 222, 1) 100%
+  );
+  box-shadow: $bs-icons;
+  transform: scale(1.1);
+}
+// =================================
 
 // EACH iconos links
 /* Tamaños iconos links */
@@ -108,22 +155,29 @@ p {
 }
 
 .title {
-  @include title-subtitle(2rem, 500, $title-color, 5px, 25px);
+  @include title-subtitle(2rem, 500, $title-color, 0 0 5px 0, 0 0 25px 0);
   border-bottom: 3px solid $title-color;
 }
 
 .subtitle {
-  @include title-subtitle(1.5rem, 400, $subtitle-color, 0, 5px);
+  @include title-subtitle(1.5rem, 400, $subtitle-color, 0, 0 0 5px 0);
 }
 
 .subtitle-white {
   color: #fff;
 }
 
+.paragraph {
+  @include paragraph($text-color);
+}
+
 /* ================ */
 
 // SECCIONES
+// Se mantienen en todas las páginas
 @import "nav";
+@import "footer";
+
 @import "index";
 @import "nosotros";
-@import "footer";
+@import "servicios";

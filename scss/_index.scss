@@ -86,24 +86,9 @@
 }
 
 .aside__link {
-  display: inline-block;
-  background-color: $bg-icons;
-  height: fit-content;
+  @extend .aside-vet-links;
 
   @include spacing(0 0 8px 0, 8px);
-  border-radius: 50%;
-
-  transition: $transition;
-}
-
-.aside__link:hover {
-  background: linear-gradient(
-    360deg,
-    rgba(113, 161, 220, 1) 0%,
-    rgba(173, 103, 222, 1) 100%
-  );
-  box-shadow: $bs-icons;
-  transform: scale(1.1);
 }
 
 .aside p {
