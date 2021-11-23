@@ -18,12 +18,16 @@
 }
 
 //MIXIN para asignar tamaños
-@mixin size($ancho, $alto, $b-radius: false) {
+@mixin size($ancho, $alto, $picture: false, $b-radius: false) {
   width: $ancho;
   height: $alto;
 
   @if $b-radius {
     border-radius: 10px;
+  }
+
+  @if $picture {
+    object-fit: cover;
   }
 }
 
@@ -85,10 +89,10 @@ $sizes-icons: 5rem, 6rem;
 }
 
 body {
-  background-color: #fafcff;
+  background-color: $bg-body;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #3a3a3a;
+  color: $text-color;
 }
 
 .bold {
@@ -121,4 +125,5 @@ p {
 // SECCIONES
 @import "nav";
 @import "index";
+@import "nosotros";
 @import "footer";

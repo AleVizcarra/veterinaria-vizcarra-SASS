@@ -37,7 +37,7 @@
 }
 
 .hero div {
-  @include size(100%, auto, $b-radius: false);
+  @include size(100%, auto, $picture: false, $b-radius: false);
   color: #fff;
   opacity: 0;
 
@@ -53,7 +53,7 @@
 }
 
 .hero__text {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 @keyframes opacity {
@@ -130,10 +130,9 @@
 }
 
 .tech__img {
-  @include size(100%, 250px, $b-radius: true);
+  @include size(100%, 250px, $picture: true, $b-radius: true);
   max-width: 500px;
   margin: 20px 0;
-  object-fit: cover;
 }
 
 .tech__text {

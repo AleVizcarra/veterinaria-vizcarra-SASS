@@ -1,10 +1,10 @@
 /* ============= FOOTER ============= */
 .footer {
   @include flex(column, nowrap, flex-start, flex-start);
-  @include size(100%, 21rem, $b-radius: false);
+  @include size(100%, 23rem, $picture: false, $b-radius: false);
   @include spacing(3rem 0 0 0, 45px 20px 20px);
 
-  background-color: #d8dff0;
+  background-color: $bg-footer;
 
   font-size: 0.9rem;
 
@@ -15,6 +15,59 @@
   margin-bottom: 0.5rem;
 }
 
-.footer__social {
-  @include size(100%, auto, $b-radius: false);
+.social__links {
+  display: flex;
+  column-gap: 15px;
+
+  padding: 0;
+  margin-top: 7px;
+
+  list-style-type: none;
+}
+
+.footer__icon {
+  font-size: 1.2rem;
+  color: $bg-footer;
+  text-decoration: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__icon:hover {
+  color: $bg-footer;
+}
+
+.social__links li {
+  @include size(2.2rem, 2.2rem, $picture: false, $b-radius: false);
+  padding: 5px;
+  border-radius: 50%;
+
+  @include flex(auto, nowrap, center, center);
+
+  background-color: $text-color;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.social__links li:hover {
+  transform: scale(1.1);
+}
+
+// MAP Redes Sociales
+/* Bg hover redes sociales */
+$redes: (
+  facebook: #3b5998,
+  twitter: #00acee,
+  instagram: #c13584,
+);
+
+@each $red, $color in $redes {
+  .icon-#{$red}:hover {
+    background-color: $color;
+  }
+}
+
+.footer__social .footer__icon:visited {
+  color: $bg-footer;
 }
