@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// VARIABLES
+@import "variables";
+
+/* ESTILOS GENERALES */
+
+/* Tamaños de fuente */
+@for $i from 1 through 4 {
+  .fsize-#{$i} {
+    font-size: 1rem * $i;
+  }
+}
+
+//MIXIN para asignar tamaños
+@mixin size($ancho, $alto, $b-radius: false) {
+  width: $ancho;
+  height: $alto;
+
+  @if $b-radius {
+    border-radius: 10px;
+  }
+}
+
+// MIXIN para estilos de titulos/subtitulos
+@mixin titles-df($font-family, $font-weight, $color, $p-bottom, $m-bottom) {
+  font-family: $font-family, sans-serif;
+  font-weight: $font-weight;
+  color: $color;
+  padding-bottom: $p-bottom;
+  margin-bottom: $m-bottom;
+}
+
+@mixin title-subtitle($font-size, $font-weight, $color, $p-bottom, $m-bottom) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  padding-bottom: $p-bottom;
+  margin-bottom: $m-bottom;
+}
+
+// MIXIN fonts
+@mixin font($font-size, $font-weight, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+// MIXIN Spacing
+@mixin spacing($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+// MIXIN Flexbox
+@mixin flex($direction, $wrap, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+// MIXIN Grid
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+// EACH iconos links
+/* Tamaños iconos links */
+$sizes-icons: 5rem, 6rem;
+
+@each $size in $sizes-icons {
+  .icon-#{$size} {
+    width: $size;
+    height: $size;
+  }
+}
+
+body {
+  background-color: #fafcff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.pages {
+  margin-top: 40px;
+}
+
+.title {
+  @include title-subtitle(2rem, 500, $title-color, 5px, 25px);
+  border-bottom: 3px solid $title-color;
+}
+
+.subtitle {
+  @include title-subtitle(1.5rem, 400, $subtitle-color, 0, 5px);
+}
+
+.subtitle-white {
+  color: #fff;
+}
+
+/* ================ */
+
+// SECCIONES
+@import "nav";
+@import "index";
+@import "footer";

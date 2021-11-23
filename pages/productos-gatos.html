@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============= Google Font ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&family=Mulish:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============= Kit's Code ============= -->
+    <script
+      src="https://kit.fontawesome.com/0f2c1afb27.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ============== CSS Bootsrap ============== -->
+    <link rel="stylesheet" href="../css-bootstrap/bootstrap.css" />
+
+    <!-- =============== Main CSS =============== -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Productos para gato</title>
+  </head>
+  <body>
+    <!-- ================= Menú de navegacción ====================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-home bg-nav sticky-top nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-home text-white ms-2 fsize-4" href="../index.html"
+          >Happy Tails</a
+        >
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./servicios.html">Servicios</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nuestro-equipo.html">Equipo</a>
+            </li>
+
+            <li class="nav-item dropdown me-1">
+              <a
+                class="nav-link-white dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-perros.html"
+                    >Perros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-gatos.html"
+                    >Gatos</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ====================== MAIN ======================= -->
+    <main class="pages">
+      <section class="container section-productos">
+        <h1 class="title">Productos para Gato</h1>
+
+        <!-- BUSCAR -->
+        <section class="container p-4 mb-3 buscar">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== ACCESORIOS ===== -->
+        <h2 class="subtitle">Alimentos</h2>
+
+        <div class="row productos-container">
+          <!-- Alimento 1 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/food-1.jpeg"
+              alt="Alimento para gato marca Whole Hearted"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Alimento natural para gato receta salmón
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$616</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 2 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/food-2.jpeg"
+              alt="Alimento para gato Instinct Original"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Alimento para gato Instinct Original receta pollo
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$850</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 3 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/food-3.jpeg"
+              alt="Comida para gato Royal Canin"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Comida para gato Royal Canin control de apetito
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$700</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 4 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/food-4.jpeg"
+              alt="Alimento húmedo para gato Fancy Feast"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Alimento húmedo para gato Fancy Feast receta Salmón
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$25</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 5 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/food-5.jpeg"
+              alt="Alimento húmedo para gato Royal Canin"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Royal Canin Ultra Light Alimento húmedo para gato adulto receta
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$58</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Higiene -->
+      <section class="container section-productos">
+        <h2 class="subtitle">Higiene</h2>
+
+        <div class="row productos-container">
+          <!-- Higiene 1 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/higiene-1.jpeg"
+              alt="Arena para gato Cat's Best"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Arena para gato Cat's Best 8.8kg</p>
+            <div class="comprar">
+              <p class="producto__precio">$370</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 2 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/higiene-2.jpg"
+              alt="Spray deodorizante para arena de gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Spray deodorizante enzimático para arena de gato Hartz 17 oz
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$300</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 3 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/higiene-3.jpg"
+              alt="Shampoo hidrtante para gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Shampoo hidratante para gato 532 ml</p>
+            <div class="comprar">
+              <p class="producto__precio">$250</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 4 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/higiene-4.jpg"
+              alt="Pipeta antipulgas para gato Fiprolex"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Pipeta antipulgas para gato Fiprolex</p>
+            <div class="comprar">
+              <p class="producto__precio">$195</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 5 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/higiene-5.jpg"
+              alt="Cepillo combo para gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Cepillo combo para gato Well & Good</p>
+            <div class="comprar">
+              <p class="producto__precio">$99</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accesorios -->
+      <section class="container section-productos">
+        <h2 class="subtitle">Accesorios</h2>
+
+        <div class="row productos-container">
+          <!-- Accesorio 1 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/accesorio-1.jpeg"
+              alt="Arnés para gato con Correa"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Set Arnés de Malla y Correa para Gato Good2Go
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$300</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 2 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/accesorio-2.jpeg"
+              alt="Collar de piel para gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Collar de piel para gato Bond&Co</p>
+            <div class="comprar">
+              <p class="producto__precio">$215</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 3 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/accesorio-3.jpeg"
+              alt="Correa lisa color negro para gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Correa lisa color negro para gato Good2Go
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$175</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 4 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/accesorio-4.jpg"
+              alt="Cama para gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Cama para gato Petsure</p>
+            <div class="comprar">
+              <p class="producto__precio">$800</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 5 -->
+          <div class="producto">
+            <img
+              src="../public/img/gato/accesorio-5.jpg"
+              alt="Poste rascador para gato"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Poste rascador para gato You & Me</p>
+            <div class="comprar">
+              <p class="producto__precio">$200</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="footer footer-productos">
+      <div class="footer__contacto">
+        <p class="bold">Contacto</p>
+        <p>Laguna Plaza local 27, Av. Reforma Mazatlán, Sin.</p>
+        <p>Tel: 6691985069</p>
+        <p>Email: HappyTails@gmail.com</p>
+      </div>
+
+      <div class="footer__horario">
+        <p class="bold">Horario de Atención</p>
+        <p>Lunes a Domingo</p>
+        <p>8:00 am - 6:00pm</p>
+      </div>
+
+      <nav class="footer__social">
+        <p class="bold">Redes Sociales</p>
+        <ul class="social__links">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              class="footer__icon fab fa-facebook-f"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/?lang=es"
+              class="footer__icon fab fa-twitter"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/?hl=es"
+              class="footer__icon fab fa-instagram"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- ====== Links JS ======= -->
+    <script src="../js/bootstrap.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

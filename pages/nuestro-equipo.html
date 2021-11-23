@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============= Google Font ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&family=Mulish:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============= Kit's Code ============= -->
+    <script
+      src="https://kit.fontawesome.com/0f2c1afb27.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ============== CSS Bootsrap ============== -->
+    <link rel="stylesheet" href="../css-bootstrap/bootstrap.css" />
+
+    <!-- =============== Main CSS =============== -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Nuestro Equipo</title>
+  </head>
+  <body class="grid-equipo">
+    <!-- ================= Menú de navegacción ====================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-home bg-nav sticky-top nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-home text-white ms-2 fsize-4" href="../index.html"
+          >Happy Tails</a
+        >
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./servicios.html">Servicios</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nuestro-equipo.html">Equipo</a>
+            </li>
+
+            <li class="nav-item dropdown me-1">
+              <a
+                class="nav-link-white dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-perros.html"
+                    >Perros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-gatos.html"
+                    >Gatos</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================= MAIN =========================== -->
+    <main class="main-equipo pages">
+      <h1 class="title">Conoce a nuestro equipo</h1>
+
+      <!-- ================== Estilistas ==================== -->
+      <h2 class="subtitle">Nuestros Estilistas</h2>
+
+      <section class="nuestro-equipo">
+        <!-- Estilista 1 -->
+        <div class="equipo">
+          <img
+            src="../public/img/estilista-1.jpg"
+            alt="Mujer acariciando un perro"
+            class="equipo__img"
+          />
+          <p class="equipo__nombre">Christina Arce</p>
+          <p class="equipo__texto">
+            Christina Arce desde pequeña desarrolló una gran amor y respeto por
+            los animales, por lo que decidió unirse a nuestro equipo primero
+            como voluntaria y posteriormente decidió realizar un curso de
+            estética canina y se convirtió en una de nuestros estilistas. Ha
+            trabajado con nosotros por 3 años, por lo que cuenta con mucha
+            experiencia en el cuidado estético de perros y gatos.
+          </p>
+        </div>
+
+        <!-- Estilista 2 -->
+        <div class="equipo">
+          <img
+            src="../public/img/estilista-2.jpg"
+            alt="Mujer acariciando un perro"
+            class="equipo__img"
+          />
+          <p class="equipo__nombre">Santiago Millán</p>
+          <p class="equipo__texto">
+            Santiago Millán cursó el Program de Estética Profesional con lo cual
+            obtuvo más de 800 horas prácticas en el cuidado estético de perros y
+            gatos. Su sueño es convertirse en veterinario por lo cual, a la par
+            que trabaja con nosotros como estilista, cursa la faculta de
+            medicina veterinaria en la Universidad Autónoma de Sinaloa.
+          </p>
+        </div>
+
+        <!-- Estilista 3 -->
+        <div class="equipo">
+          <img
+            src="../public/img/estilista-3.jpg"
+            alt="Mujer acariciando un perro"
+            class="equipo__img"
+          />
+          <p class="equipo__nombre">Jessica Ureña</p>
+          <p class="equipo__texto">
+            Apasionada por el cuidado de los animales, Jessica Ureña se unió a
+            nuestro equipo hace 2 años y lleva practicando petgrooming por 4
+            años por lo que es una estilista altamente capacitada que cuenta con
+            la experiencia necesaria para ofrecer a sus mascotas el mejor
+            cuidado posible.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================== Veterinariois ==================== -->
+      <h2 class="subtitle">Nuestros Veterinarios</h2>
+
+      <section class="nuestro-equipo">
+        <!-- Veterinario-1 -->
+        <div class="equipo">
+          <img
+            src="../public/img/doctor-1.jpg"
+            alt="Mujer acariciando un perro"
+            class="equipo__img"
+          />
+          <p class="equipo__nombre">Dra. Mariana Oropeza</p>
+          <p class="equipo__texto">
+            La Dra. Oropeza se recibió de la facultad de medicina veterinaria de
+            la Universidad Nacional Autónoma de México en 1994. También completó
+            una pasantía en cirugía y medicina interna en el Centro Veterinario
+            México en 1999. La Dra. Oropeza ha formado parte de nuestro equipo
+            desde que completó su pasantía en 1999. Actualmente es directora
+            médico de Happy Tails.
+          </p>
+        </div>
+
+        <!-- Veterinario-2 -->
+        <div class="equipo">
+          <img
+            src="../public/img/doctor-2.jpg"
+            alt="Mujer acariciando un perro"
+            class="equipo__img"
+          />
+          <p class="equipo__nombre">Dr. Diego Pineda</p>
+          <p class="equipo__texto">
+            El Dr. Diego Pineda es graduado de la facultad de medicina
+            veterinaria y zootecnia de la Universidad de Guadalajara. Durante
+            sus estudios realizó una pasantía en Happy Tails y debido a su gran
+            compromiso, disposición y dedicación, al graduarse se convirtió en
+            parte de nuestro equipo de veterinarios y día con día nos sentimos
+            orgullosos de su progreso.
+          </p>
+        </div>
+
+        <!-- Veterinario-3 -->
+        <div class="equipo">
+          <img
+            src="../public/img/doctor-3.jpg"
+            alt="Mujer acariciando un perro"
+            class="equipo__img"
+          />
+          <p class="equipo__nombre">Dr. Roberto Díaz</p>
+          <p class="equipo__texto">
+            El Dr. Roberto Díaz, graduado de la facultad de medicina veterinaria
+            de la Universidad de Guadalajara, es originario de Mazatlán y está
+            muy orgulloso de formar parte de nuestro equipo por 5 años y de
+            poder ayudar a los animales de la comunidad en la que creció. El Dr.
+            Díaz desarrolló un amor por los animales desde pequeño y a los 10
+            años decidió que se convertiría en veterinario.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="footer footer-equipo">
+      <div class="footer__contacto">
+        <p class="bold">Contacto</p>
+        <p>Laguna Plaza local 27, Av. Reforma Mazatlán, Sin.</p>
+        <p>Tel: 6691985069</p>
+        <p>Email: HappyTails@gmail.com</p>
+      </div>
+
+      <div class="footer__horario">
+        <p class="bold">Horario de Atención</p>
+        <p>Lunes a Domingo</p>
+        <p>8:00 am - 6:00pm</p>
+      </div>
+
+      <nav class="footer__social">
+        <p class="bold">Redes Sociales</p>
+        <ul class="social__links">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              class="footer__icon fab fa-facebook-f"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/?lang=es"
+              class="footer__icon fab fa-twitter"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/?hl=es"
+              class="footer__icon fab fa-instagram"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- ====== Links JS ======= -->
+    <script src="../js/bootstrap.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

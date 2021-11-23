@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============= Google Font ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&family=Mulish:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============= Kit's Code ============= -->
+    <script
+      src="https://kit.fontawesome.com/0f2c1afb27.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ============== CSS Bootsrap ============== -->
+    <link rel="stylesheet" href="../css-bootstrap/bootstrap.css" />
+
+    <!-- =============== Main CSS =============== -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Productos para perro</title>
+  </head>
+  <body>
+    <!-- ================= Menú de navegacción ====================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-home bg-nav sticky-top nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-home text-white ms-2 fsize-4" href="../index.html"
+          >Happy Tails</a
+        >
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./servicios.html">Servicios</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nuestro-equipo.html">Equipo</a>
+            </li>
+
+            <li class="nav-item dropdown me-1">
+              <a
+                class="nav-link-white dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-perros.html"
+                    >Perros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-gatos.html"
+                    >Gatos</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ====================== MAIN ======================= -->
+    <main class="pages">
+      <section class="container section-productos">
+        <h1 class="title">Productos para Perro</h1>
+
+        <!-- BUSCAR -->
+        <section class="container p-4 mb-3 buscar">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-primary" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==== ALIMENTOS ==== -->
+        <h2 class="subtitle">Alimentos</h2>
+
+        <div class="row productos-container">
+          <!-- Alimento 1 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/food-1.jpeg"
+              alt="Comida para perro marca Pedigree"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Alimento Pedigree nutrición completa para perros adultos
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$500</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+
+          <!-- Alimento 2 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/food-2.jpeg"
+              alt="Comida para perro marca Royal Canin"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Alimento Royal Canin Early Cardiac</p>
+            <div class="comprar">
+              <p class="producto__precio">$1,500</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 3 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/food-3.png"
+              alt="Comida para perro marca Purina ONE"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Alimento seco Purina ONE</p>
+            <div class="comprar">
+              <p class="producto__precio">$350</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 4 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/food-4.jpg"
+              alt="Comida para perro marca Purina"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Alimento seco para cachorros de alta proteína
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$250</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Alimento 5 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/food-5.jpeg"
+              alt="Comida para perro marca Royal Canin"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Alimento húmedo Royal Canin bajo en grasa para perro adulto
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$75</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Higiene -->
+      <section class="container section-productos">
+        <h2 class="subtitle">Higiene</h2>
+
+        <div class="row productos-container">
+          <!-- Higiene 1 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/higiene-1.jpeg"
+              alt="Tapete absorbente para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Sophresh Leak Guard: Tapete ultra absorbente para perro
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$470</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 2 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/higiene-2.jpeg"
+              alt="Shampoo para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Shampoo control de olores para perro Nature's Miracle
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$185</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 3 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/higiene-3.jpeg"
+              alt="Shampoo antipulgas para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Shampoo antipulgas para perro Holland Lassy
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$175</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 4 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/higiene-4.jpeg"
+              alt="Premio dental para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              SmartBones Premio Salud Dental (2 piezas)
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$130</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Higiene 5 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/higiene-5.jpeg"
+              alt="Peine para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Well & Good Peine de 2 Lados Antipulgas para Perro
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$99</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accesorios -->
+      <section class="container section-productos">
+        <h2 class="subtitle">Accesorios</h2>
+
+        <div class="row productos-container">
+          <!-- Accesorio 1 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/accesorio-1.jpg"
+              alt="Collar para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Bond & Co Collar de Cuero</p>
+            <div class="comprar">
+              <p class="producto__precio">$300</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 2 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/accesorio-2.jpeg"
+              alt="Correa para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Kurgo Correa Springback Color Negro 1.2m
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$200</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 3 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/accesorio-3.jpg"
+              alt="Arnés para perro Front Range"
+              class="producto__img"
+            />
+            <p class="producto__nombre">
+              Kurgo Correa Springback Color Negro 1.2m
+            </p>
+            <div class="comprar">
+              <p class="producto__precio">$350</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 4 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/accesorio-4.jpeg"
+              alt="Cama para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Cama para perro Reddy Cuddler</p>
+            <div class="comprar">
+              <p class="producto__precio">$900</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+          <!-- Accesorio 5 -->
+          <div class="producto">
+            <img
+              src="../public/img/perro/accesorio-5.jpg"
+              alt="Plato para perro"
+              class="producto__img"
+            />
+            <p class="producto__nombre">Plato de cerámica para perro</p>
+            <div class="comprar">
+              <p class="producto__precio">$180</p>
+              <button type="button" class="btn btn-primary btn-comprar">
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="footer footer-productos">
+      <div class="footer__contacto">
+        <p class="bold">Contacto</p>
+        <p>Laguna Plaza local 27, Av. Reforma Mazatlán, Sin.</p>
+        <p>Tel: 6691985069</p>
+        <p>Email: HappyTails@gmail.com</p>
+      </div>
+
+      <div class="footer__horario">
+        <p class="bold">Horario de Atención</p>
+        <p>Lunes a Domingo</p>
+        <p>8:00 am - 6:00pm</p>
+      </div>
+
+      <nav class="footer__social">
+        <p class="bold">Redes Sociales</p>
+        <ul class="social__links">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              class="footer__icon fab fa-facebook-f"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/?lang=es"
+              class="footer__icon fab fa-twitter"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/?hl=es"
+              class="footer__icon fab fa-instagram"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- ====== Links JS ======= -->
+    <script src="../js/bootstrap.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

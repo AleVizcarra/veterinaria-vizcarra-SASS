@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ============= Google Font ============= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&family=Mulish:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============= Kit's Code ============= -->
+    <script
+      src="https://kit.fontawesome.com/0f2c1afb27.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ============== CSS Bootsrap ============== -->
+    <link rel="stylesheet" href="../css-bootstrap/bootstrap.css" />
+
+    <!-- =============== Main CSS =============== -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Contacto</title>
+  </head>
+
+  <body class="grid-contacto">
+    <!-- ================= Menú de navegacción ====================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-home bg-nav sticky-top nav"
+    >
+      <div class="container-fluid">
+        <a class="navbar-home text-white ms-2 fsize-4" href="../index.html"
+          >Happy Tails</a
+        >
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./servicios.html">Servicios</a>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./nuestro-equipo.html">Equipo</a>
+            </li>
+
+            <li class="nav-item dropdown me-1">
+              <a
+                class="nav-link-white dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-perros.html"
+                    >Perros</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-hover"
+                    href="./productos-gatos.html"
+                    >Gatos</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-1">
+              <a class="nav-link-white" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ====================== MAIN ======================= -->
+    <main>
+      <section class="container pages contacto">
+        <h1 class="title">Contacto</h1>
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="subtitle">Dirección</h2>
+            <p>Laguna Plaza & Business Center Local 27</p>
+            <p>Av. Reforma Mazatlán, Sin.</p>
+            <br />
+            <h2 class="subtitle">Horario</h2>
+            <p>Lunes a Domingo</p>
+            <p>8:00 am - 6:00pm</p>
+            <br />
+            <h2 class="subtitle">Llámanos</h2>
+            <p><span class="bold">Tel:</span> 6691985069</p>
+          </div>
+
+          <div class="col-md-7 py-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7332.286512727318!2d-106.43819189913916!3d23.237873488192623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5360532a0531%3A0xa04ff1577fa35344!2sLaguna%20Plaza%20Business%20Center!5e0!3m2!1ses!2smx!4v1634583278159!5m2!1ses!2smx"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== FORM ======================= -->
+      <section class="container mensaje">
+        <h2 class="subtitle">Déjanos un mensaje</h2>
+
+        <div class="row">
+          <form class="col-md-10 px-3 form">
+            <label class="form__label" for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              required
+              placeholder="Nombre completo"
+            />
+
+            <label class="form__label" for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+
+            <label class="form__label" for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              cols="50"
+              rows="10"
+              placeholder="Ingresa tu mensaje"
+              required
+            ></textarea>
+
+            <!-- Modal -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn"
+              id="btn-enviar"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Enviar
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    Mensaje enviado con éxito
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="footer footer-contacto">
+      <div class="footer__contacto">
+        <p class="bold">Contacto</p>
+        <p>Laguna Plaza local 27, Av. Reforma Mazatlán, Sin.</p>
+        <p>Tel: 6691985069</p>
+        <p>Email: HappyTails@gmail.com</p>
+      </div>
+
+      <div class="footer__horario">
+        <p class="bold">Horario de Atención</p>
+        <p>Lunes a Domingo</p>
+        <p>8:00 am - 6:00pm</p>
+      </div>
+
+      <nav class="footer__social">
+        <p class="bold">Redes Sociales</p>
+        <ul class="social__links">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              class="footer__icon fab fa-facebook-f"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/?lang=es"
+              class="footer__icon fab fa-twitter"
+              target="_blank"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/?hl=es"
+              class="footer__icon fab fa-instagram"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!-- ====== Links JS ======= -->
+    <script src="../js/bootstrap.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

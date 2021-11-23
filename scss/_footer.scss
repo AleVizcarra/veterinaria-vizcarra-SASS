@@ -1,0 +1,20 @@
+/* ============= FOOTER ============= */
+.footer {
+  @include flex(column, nowrap, flex-start, flex-start);
+  @include size(100%, 21rem, $b-radius: false);
+  @include spacing(3rem 0 0 0, 45px 20px 20px);
+
+  background-color: #d8dff0;
+
+  font-size: 0.9rem;
+
+  grid-area: footer;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer__social {
+  @include size(100%, auto, $b-radius: false);
+}

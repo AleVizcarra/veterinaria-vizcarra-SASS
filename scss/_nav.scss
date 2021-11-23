@@ -1,0 +1,44 @@
+// VARIABLES
+@import "variables";
+
+/* ================= NAVEGADOR =================== */
+.nav-home {
+  background-color: $primary-color;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem 0 0.8rem 0;
+  grid-area: navegador;
+}
+
+.navbar-home {
+  @include titles-df("Bebas Neue", normal, #fff, 0, 0);
+  text-decoration: none;
+}
+
+.nav-link-white {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-item {
+  border-radius: $border-radius;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: #29374e;
+}
+
+.nav-link-white:hover {
+  color: #fff;
+}
+
+.item-hover:hover {
+  padding-left: 30px;
+  transition: $transition;
+}
