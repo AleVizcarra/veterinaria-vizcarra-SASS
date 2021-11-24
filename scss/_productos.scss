@@ -8,7 +8,7 @@
 }
 
 .productos-container {
-  @include flex(row, wrap, center, flex-start);
+  @include flex(row, wrap, center, stretch);
   row-gap: 25px;
 }
 
