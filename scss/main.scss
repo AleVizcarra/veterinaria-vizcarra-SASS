@@ -137,7 +137,7 @@ $sizes-icons: 5rem, 6rem;
 
 body {
   background-color: $bg-body;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-principal;
   font-size: 1rem;
   color: $text-color;
 }
@@ -181,3 +181,5 @@ p {
 @import "index";
 @import "nosotros";
 @import "servicios";
+@import "equipo";
+@import "contacto";
