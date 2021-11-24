@@ -87,6 +87,7 @@
 @mixin cards(
   $width,
   $max-width,
+  $min-width,
   $margin,
   $padding,
   $bg-color,
@@ -96,6 +97,7 @@
 ) {
   width: $width;
   max-width: $max-width;
+  min-width: $min-width;
   margin: $margin;
   padding: $padding;
   background-color: $bg-color;
@@ -183,3 +185,4 @@ p {
 @import "servicios";
 @import "equipo";
 @import "contacto";
+@import "productos";

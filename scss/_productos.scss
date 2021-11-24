@@ -1,0 +1,72 @@
+@import "variables";
+
+/* =============== PRODUCTOS =============== */
+
+.section-productos {
+  max-width: 950px;
+  margin-bottom: 30px;
+}
+
+.productos-container {
+  @include flex(row, wrap, center, flex-start);
+  row-gap: 25px;
+}
+
+.buscar {
+  background-color: $bg-section;
+  border-radius: 8px;
+}
+
+/* Divs */
+.producto {
+  @include cards(
+    (100% / 5) - 2%,
+    270px,
+    215px,
+    0,
+    0,
+    #fff,
+    8px,
+    0 0 3px rgba(0, 0, 0, 0.2),
+    1rem
+  );
+
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto__img {
+  @include size(100%, 190px, $picture: true, $b-radius: false);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.producto__nombre {
+  @include spacing(20px 15px 10px, 0 10px);
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.producto__precio {
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #01368b;
+  margin-top: auto;
+}
+
+.comprar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+}
+
+.btn-comprar {
+  width: 50%;
+  height: 35px;
+}
+
+.producto:hover {
+  box-shadow: 0 0 32px -16px rgba(0, 0, 0, 0.5);
+}

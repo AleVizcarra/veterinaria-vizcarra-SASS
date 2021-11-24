@@ -23,7 +23,7 @@
 .form {
   @include spacing(20px auto, 30px);
   max-width: 750px;
-  background-color: #e3ecff;
+  background-color: $bg-section;
   font-family: $font-principal;
 }
 
