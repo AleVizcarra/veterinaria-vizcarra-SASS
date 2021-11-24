@@ -3,18 +3,30 @@
 /* =============== PRODUCTOS =============== */
 
 .section-productos {
+  width: auto;
+  margin: 0 auto;
   max-width: 950px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.subtitle-productos {
+  text-align: center;
+  background-color: $secondary-color;
+  @include spacing(0 0 15px 0, 5px);
 }
 
 .productos-container {
-  @include flex(row, wrap, center, stretch);
+  width: 100%;
+  @include flex(row, wrap, space-between, stretch);
+  column-gap: 20px;
   row-gap: 25px;
 }
 
 .buscar {
   background-color: $bg-section;
   border-radius: 8px;
+  margin-bottom: 30px;
+  max-width: 900px;
 }
 
 /* Divs */

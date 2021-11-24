@@ -49,13 +49,16 @@
   }
 }
 
-@media (min-width: 440px) {
-  .productos-container {
-    justify-content: space-evenly;
-  }
-
+@media (min-width: 450px) {
   .producto {
     flex-grow: 0;
+  }
+}
+
+@media (min-width: 474px) {
+  /* PRODUCTOS */
+  .productos-container {
+    justify-content: space-evenly;
   }
 }
 
@@ -89,6 +92,36 @@
 @media (min-width: 700px) {
   .hero {
     background-position: left top 115px;
+  }
+}
+
+@media (min-width: 709px) {
+  /* PRODUCTOS */
+
+  /* Gatos */
+  .cg-5 {
+    margin-right: auto;
+  }
+
+  .hg-5 {
+    margin-right: auto;
+  }
+
+  .ag-5 {
+    margin-right: auto;
+  }
+
+  /* Perros */
+  .cp-5 {
+    margin-right: auto;
+  }
+
+  .hp-5 {
+    margin-right: auto;
+  }
+
+  .ap-5 {
+    margin-right: auto;
   }
 }
 
@@ -138,10 +171,6 @@
     margin: 35px auto 0 auto;
   }
 
-  .equipo {
-    flex-grow: 0;
-  }
-
   /* SERVICIOS */
   .main-servicios {
     width: 90%;
@@ -152,8 +181,7 @@
   .paquete {
     width: 100%;
     max-width: 730px;
-    padding: 8px 15px;
-    margin-bottom: 20px;
+    @include spacing(0 0 20px 0, 8px 15px);
 
     display: flex;
     align-items: center;
@@ -238,11 +266,12 @@
     border-left: 2px solid #dbdbdb;
   }
 
+  .aside__title {
+    font-size: 2.5rem;
+  }
+
   .aside__icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(column, nowrap, space-evenly, center);
   }
 
   /* Tech */
@@ -254,10 +283,8 @@
 
   .tech__info {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
+    @include flex(row, nowrap, space-between, center);
   }
 
   .tech__img {
@@ -303,10 +330,7 @@
 
   /* ====== NOSOTROS ======= */
   .nosotros__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, nowrap, space-between, center);
   }
 
   .nosotros__text {
@@ -337,6 +361,10 @@
   .vet__img-icono {
     width: 30%;
   }
+
+  .alimento-5 {
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -352,7 +380,7 @@
   }
 
   .hero div {
-    top: 200px;
+    top: 270px;
   }
 
   /* NOSOTROS */
@@ -443,5 +471,10 @@
   .paquete__info {
     width: 100%;
     flex-grow: 1;
+  }
+
+  /* PRODUCTOS */
+  .producto {
+    margin: 0;
   }
 }
