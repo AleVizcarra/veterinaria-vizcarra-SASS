@@ -95,36 +95,6 @@
   }
 }
 
-@media (min-width: 709px) {
-  /* PRODUCTOS */
-
-  /* Gatos */
-  .cg-5 {
-    margin-right: auto;
-  }
-
-  .hg-5 {
-    margin-right: auto;
-  }
-
-  .ag-5 {
-    margin-right: auto;
-  }
-
-  /* Perros */
-  .cp-5 {
-    margin-right: auto;
-  }
-
-  .hp-5 {
-    margin-right: auto;
-  }
-
-  .ap-5 {
-    margin-right: auto;
-  }
-}
-
 @media (min-width: 750px) {
   /* HOME */
   .grid-home {
@@ -181,7 +151,8 @@
   .paquete {
     width: 100%;
     max-width: 730px;
-    @include spacing(0 0 20px 0, 8px 15px);
+    margin: 0 auto;
+    @include spacing(0 auto 20px auto, 8px 15px);
 
     display: flex;
     align-items: center;

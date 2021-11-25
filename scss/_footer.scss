@@ -9,65 +9,69 @@
   font-size: 0.9rem;
 
   grid-area: footer;
-}
 
-.footer p {
-  margin-bottom: 0.5rem;
-}
+  & p {
+    margin-bottom: 0.5rem;
+  }
 
-.social__links {
-  display: flex;
-  column-gap: 15px;
+  .social__links {
+    display: flex;
+    column-gap: 15px;
 
-  padding: 0;
-  margin-top: 7px;
+    padding: 0;
+    margin-top: 7px;
 
-  list-style-type: none;
-}
+    list-style-type: none;
 
-.footer__icon {
-  font-size: 1.2rem;
-  color: $bg-footer;
-  text-decoration: none;
+    // MAP Redes Sociales
+    /* Bg hover redes sociales */
+    $redes: (
+      facebook: #3b5998,
+      twitter: #00acee,
+      instagram: #c13584,
+    );
 
-  transition: all 0.3s ease-in-out;
-}
+    @each $red, $color in $redes {
+      .icon-#{$red}:hover {
+        background-color: $color;
+      }
+    }
 
-.footer__icon:hover {
-  color: $bg-footer;
-}
+    & li {
+      @include size(2.2rem, 2.2rem, $picture: false, $b-radius: false);
+      padding: 5px;
+      border-radius: 50%;
 
-.social__links li {
-  @include size(2.2rem, 2.2rem, $picture: false, $b-radius: false);
-  padding: 5px;
-  border-radius: 50%;
+      @include flex(auto, nowrap, center, center);
 
-  @include flex(auto, nowrap, center, center);
+      background-color: $text-color;
+      cursor: pointer;
 
-  background-color: $text-color;
-  cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
-  transition: all 0.3s ease-in-out;
-}
+      &:hover {
+        transform: scale(1.1);
+      }
 
-.social__links li:hover {
-  transform: scale(1.1);
-}
+      .footer__icon {
+        font-size: 1.2rem;
+        color: $bg-footer;
+        text-decoration: none;
 
-// MAP Redes Sociales
-/* Bg hover redes sociales */
-$redes: (
-  facebook: #3b5998,
-  twitter: #00acee,
-  instagram: #c13584,
-);
+        transition: all 0.3s ease-in-out;
 
-@each $red, $color in $redes {
-  .icon-#{$red}:hover {
-    background-color: $color;
+        &:hover {
+          color: $bg-footer;
+        }
+
+        &:visited {
+          color: $bg-footer;
+        }
+      }
+    }
   }
 }
 
-.footer__social .footer__icon:visited {
-  color: $bg-footer;
-}
+// .footer__social {
+//   color: $bg-footer;
+// }

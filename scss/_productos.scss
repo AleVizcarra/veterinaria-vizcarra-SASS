@@ -17,8 +17,8 @@
 
 .productos-container {
   width: 100%;
-  @include flex(row, wrap, space-between, stretch);
-  column-gap: 20px;
+  @include flex(row, wrap, space-evenly, stretch);
+  column-gap: 15px;
   row-gap: 25px;
 }
 
