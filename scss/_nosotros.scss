@@ -12,16 +12,16 @@
   .main-nosotros {
     grid-area: main;
     padding: 0 25px;
-  }
 
-  .nosotros__info {
-    @include flex(column, nowrap, flex-start, center);
+    .nosotros__info {
+      @include flex(column, nowrap, flex-start, center);
 
-    .nosotros__img {
-      @include size(100%, 200px, $picture: true, $b-radius: true);
-      max-width: 600px;
-      margin: 20px 0;
-      order: -1;
+      .nosotros__img {
+        @include size(100%, 200px, $picture: true, $b-radius: true);
+        max-width: 600px;
+        margin: 20px 0;
+        order: -1;
+      }
     }
   }
 }

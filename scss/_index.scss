@@ -74,23 +74,25 @@
 .aside {
   grid-area: aside;
 
-  &__title {
-    @include titles-df("Bebas Neue", normal, $primary-color, 0, 0);
-  }
-
-  &__icons {
-    display: flex;
-    justify-content: space-evenly;
-
-    .aside__link {
-      @extend .aside-vet-links;
-
-      @include spacing(0 0 8px 0, 8px);
+  .aside-container {
+    .aside__title {
+      @include titles-df("Bebas Neue", normal, $primary-color, 0, 0);
     }
-  }
 
-  & p {
-    margin-bottom: 20px;
+    .aside__icons {
+      display: flex;
+      justify-content: space-evenly;
+
+      .aside__link {
+        @extend .aside-vet-links;
+
+        @include spacing(0 0 8px 0, 8px);
+      }
+
+      & p {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 

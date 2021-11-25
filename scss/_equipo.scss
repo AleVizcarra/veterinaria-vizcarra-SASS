@@ -5,10 +5,16 @@
 .grid-equipo {
   @include grid(repeat(7, 1fr), repeat(4, auto));
 
+  /* Posición Nav */
+  .nav-home {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
   /* Posición Main */
   .main-equipo {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     padding: 0 15px;
     max-width: 1100px;
 
