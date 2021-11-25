@@ -73,6 +73,14 @@
   }
 }
 
+@media (min-width: 550px) {
+  .section-productos {
+    .productos-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .mensaje {
     .form {
@@ -107,6 +115,15 @@
   .grid-home {
     .hero {
       background-position: left top 115px;
+    }
+  }
+
+  // EQUIPO
+  .grid-equipo {
+    .main-equipo {
+      .nuestro-equipo {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   }
 }
@@ -210,6 +227,13 @@
       }
     }
   }
+
+  // PRODUCTOS
+  .section-productos {
+    .productos-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 @media (min-width: 768px) and (min-height: 1024px) {
@@ -227,6 +251,12 @@
 }
 
 @media (min-width: 1024px) {
+  // PRODUCTOS
+  .section-productos {
+    .productos-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
   /* ========== HOME ======== */
   .grid-home {
     grid-template-areas:
@@ -381,9 +411,25 @@
       }
     }
   }
+
+  // EQUIPO
+  .grid-equipo {
+    .main-equipo {
+      .nuestro-equipo {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
 }
 
 @media (min-width: 1300px) {
+  // PRODUCTOS
+  .section-productos {
+    .productos-container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
   /* HOME */
   .grid-home {
     grid-template-areas:
