@@ -1,61 +1,61 @@
 @import "variables";
 
 /* ============ NUESTRO EQUIPO ============ */
-/* Gird Equipo */
+/* Grid Equipo */
 .grid-equipo {
   @include grid(repeat(7, 1fr), repeat(4, auto));
-}
 
-/* Posición Main */
-.main-equipo {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-  padding: 0 15px;
-  max-width: 1100px;
-}
+  /* Posición Main */
+  .main-equipo {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    padding: 0 15px;
+    max-width: 1100px;
 
-/* Flex para las 2 secciones */
-.nuestro-equipo {
-  width: 100%;
-  @include flex(row, wrap, space-evenly, stretch);
-  column-gap: 15px;
-  row-gap: 20px;
-  margin: 15px 0 40px;
-}
+    /* Flex para las 2 secciones */
+    .nuestro-equipo {
+      width: 100%;
+      @include flex(row, wrap, space-evenly, stretch);
+      column-gap: 15px;
+      row-gap: 20px;
+      margin: 15px 0 40px;
 
-.equipo {
-  @include cards(
-    (99% / 3) - 2%,
-    330px,
-    280px,
-    0,
-    0,
-    #fff,
-    10px,
-    0 0 5px rgba(0, 0, 0, 0.2),
-    0.9rem
-  );
-  line-height: 1.3rem;
-  text-align: center;
+      .equipo {
+        @include cards(
+          (99% / 3) - 2%,
+          330px,
+          280px,
+          0,
+          0,
+          #fff,
+          10px,
+          0 0 5px rgba(0, 0, 0, 0.2),
+          0.9rem
+        );
+        line-height: 1.3rem;
+        text-align: center;
 
-  flex-grow: 1;
-}
+        flex-grow: 1;
 
-.equipo__img {
-  @include size(100%, 220px, $picture: true, $b-radius: false);
-  border-radius: 10px 10px 0 0;
-}
+        &__img {
+          @include size(100%, 220px, $picture: true, $b-radius: false);
+          border-radius: 10px 10px 0 0;
+        }
 
-.equipo__nombre {
-  @include title-subtitle(1.2rem, bold, $title-cards, 0, 10px 0 0 0);
-}
+        &__nombre {
+          @include title-subtitle(1.2rem, bold, $title-cards, 0, 10px 0 0 0);
+        }
 
-.equipo__texto {
-  @include spacing(0, 0 15px 20px 15px);
-}
+        &__texto {
+          @include spacing(0, 0 15px 20px 15px);
+        }
+      }
+    }
+  }
 
-/* posición footer */
-.footer-equipo {
-  grid-column: 1 / 8;
-  grid-row: 4 / 5;
+  /* posición footer */
+  .footer-equipo {
+    grid-column: 1 / 8;
+    grid-row: 4 / 5;
+  }
 }

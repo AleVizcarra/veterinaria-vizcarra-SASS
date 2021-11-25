@@ -63,8 +63,11 @@
 }
 
 @media (min-width: 576px) {
-  .form {
-    border-radius: 10px;
+  .mensaje {
+    .form {
+      border-radius: 10px;
+      padding: 20px 30px;
+    }
   }
 
   .form input,

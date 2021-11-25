@@ -3,87 +3,87 @@
 /* =============== CONTACTO ============= */
 .contacto {
   max-width: 700px;
-}
 
-.contacto p {
-  margin-bottom: 0;
-}
+  & p {
+    margin-bottom: 0;
+  }
 
-.contacto iframe {
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  & iframe {
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* Form */
 .mensaje {
   max-width: 700px;
   margin-top: 50px;
-}
 
-.form {
-  @include spacing(20px auto, 30px);
-  max-width: 750px;
-  background-color: $bg-section;
-  font-family: $font-principal;
-}
+  .form {
+    @include spacing(20px auto, 20px);
+    max-width: 750px;
+    background-color: $bg-section;
+    font-family: $font-principal;
 
-.form input,
-.form textarea {
-  @include spacing(0 auto, 8px 5px);
+    & input,
+    & textarea {
+      @include spacing(0 auto, 8px 5px);
 
-  @include font(1rem, normal, $text-color);
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  outline: none;
-  border: 2px solid #d7e4ff;
-  border-radius: 8px;
-}
+      @include font(1rem, normal, $text-color);
+      display: block;
+      width: 100%;
+      font-family: inherit;
+      outline: none;
+      border: 2px solid #d7e4ff;
+      border-radius: 8px;
+    }
 
-.form__label {
-  display: block;
-  font-family: inherit;
-  @include title-subtitle(1rem, bold, #264fb8, 0, 20px 0 5px 5px);
-}
+    & textarea::placeholder,
+    & input::placeholder {
+      font-family: $font-principal;
+      color: #999898;
+    }
 
-.form__label:first-of-type {
-  margin-top: 0;
-}
+    & input:focus,
+    & textarea:focus {
+      box-shadow: $bs-form;
+      border: 2px solid #7499f5;
+    }
 
-.form textarea {
-  height: 200px;
-  resize: none;
-  padding: 10px 5px;
-}
+    & textarea {
+      height: 200px;
+      resize: none;
+      padding: 10px 5px;
+    }
 
-.form textarea::placeholder,
-.form input::placeholder {
-  font-family: $font-principal;
-  color: #999898;
-}
+    &__label {
+      display: block;
+      font-family: inherit;
+      @include title-subtitle(1rem, bold, #264fb8, 0, 20px 0 5px 5px);
 
-.form input:focus,
-.form textarea:focus {
-  box-shadow: $bs-form;
-  border: 2px solid #7499f5;
-}
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
 
-#btn-enviar {
-  @include font(1.1rem, bold, #264fb8);
-  @include spacing(20px auto, 5px);
-  @include size(30%, auto, $picture: false, $b-radius: false);
+    #btn-enviar {
+      @include font(1.1rem, bold, #264fb8);
+      @include spacing(20px auto, 5px);
+      @include size(30%, auto, $picture: false, $b-radius: false);
 
-  display: block;
-  background-color: transparent;
-  border: 3px solid #264fb8;
-  cursor: pointer;
+      display: block;
+      background-color: transparent;
+      border: 3px solid #264fb8;
+      cursor: pointer;
 
-  transition: $transition;
-}
+      transition: $transition;
 
-#btn-enviar:hover {
-  color: #fff;
-  background-color: #264fb8;
-  box-shadow: $bs-form;
-  cursor: pointer;
+      &:hover {
+        color: #fff;
+        background-color: #264fb8;
+        box-shadow: $bs-form;
+        cursor: pointer;
+      }
+    }
+  }
 }

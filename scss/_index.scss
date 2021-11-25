@@ -14,55 +14,54 @@
     "footer footer footer footer footer footer footer";
 
   column-gap: 20px;
-}
 
-/* Sección Hero */
-.hero {
-  background-image: url(../public/img/dog.jpg),
-    linear-gradient(
-      152deg,
-      rgba(121, 202, 219, 1) 0%,
-      rgba(232, 152, 227, 1) 100%
-    );
-  background-size: cover;
-  background-position: left -190px top 115px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  .hero {
+    background-image: url(../public/img/dog.jpg),
+      linear-gradient(
+        152deg,
+        rgba(121, 202, 219, 1) 0%,
+        rgba(232, 152, 227, 1) 100%
+      );
+    background-size: cover;
+    background-position: left -190px top 115px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 
-  @include flex(row, nowrap, flex-start, flex-start);
+    @include flex(row, nowrap, flex-start, flex-start);
 
-  grid-area: hero;
-}
+    grid-area: hero;
 
-.hero div {
-  @include size(100%, auto, $picture: false, $b-radius: false);
-  color: #fff;
-  opacity: 0;
+    & div {
+      @include size(100%, auto, $picture: false, $b-radius: false);
+      color: #fff;
+      opacity: 0;
 
-  position: relative;
-  top: 20px;
+      position: relative;
+      top: 20px;
 
-  animation: opacity 2s 0.5s 1;
-  animation-fill-mode: forwards;
-}
+      animation: opacity 2s 0.5s 1;
+      animation-fill-mode: forwards;
 
-.hero__slogan {
-  font-weight: 600;
-}
+      .hero__slogan {
+        font-weight: 600;
+      }
 
-.hero__text {
-  font-size: 1rem;
-}
+      .hero__text {
+        font-size: 1rem;
+      }
+    }
 
-@keyframes opacity {
-  0% {
-    opacity: 0;
-  }
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      }
 
-  100% {
-    opacity: 1;
+      100% {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -74,25 +73,25 @@
 /* Aside */
 .aside {
   grid-area: aside;
-}
 
-.aside__title {
-  @include titles-df("Bebas Neue", normal, $primary-color, 0, 0);
-}
+  &__title {
+    @include titles-df("Bebas Neue", normal, $primary-color, 0, 0);
+  }
 
-.aside__icons {
-  display: flex;
-  justify-content: space-evenly;
-}
+  &__icons {
+    display: flex;
+    justify-content: space-evenly;
 
-.aside__link {
-  @extend .aside-vet-links;
+    .aside__link {
+      @extend .aside-vet-links;
 
-  @include spacing(0 0 8px 0, 8px);
-}
+      @include spacing(0 0 8px 0, 8px);
+    }
+  }
 
-.aside p {
-  margin-bottom: 20px;
+  & p {
+    margin-bottom: 20px;
+  }
 }
 
 /* Tech */
@@ -102,30 +101,31 @@
   @include spacing(40px 0 0, 20px 10px);
   background-color: $secondary-color;
   color: #fff;
-}
 
-.tech__container {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-}
+  &__container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
 
-.tech__info {
-  @include flex(column, nowrap, flex-start, center);
-}
+    .tech__info {
+      @include flex(column, nowrap, flex-start, center);
 
-.tech__img {
-  @include size(100%, 250px, $picture: true, $b-radius: true);
-  max-width: 500px;
-  margin: 20px 0;
-}
+      .tech__img {
+        @include size(100%, 250px, $picture: true, $b-radius: true);
+        max-width: 500px;
+        margin: 20px 0;
+      }
 
-.tech__text {
-  width: 100%;
-}
-.tech__list {
-  padding-left: 30px;
-  line-height: 1.8rem;
+      .tech__text {
+        width: 100%;
+
+        .tech__list {
+          padding-left: 30px;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
 }
 
 /* Reviews */
@@ -133,24 +133,24 @@
   grid-area: reviews;
   height: 25vh;
   background-color: transparent;
-}
 
-.caption-font {
-  font-size: 0.9rem;
-}
+  .position-item {
+    height: 70%;
+    position: absolute;
+    bottom: 15%;
+    top: 15%;
+    padding: 0;
 
-.position-item {
-  height: 70%;
-  position: absolute;
-  bottom: 15%;
-  top: 15%;
-  padding: 0;
-}
+    .caption-font {
+      font-size: 0.9rem;
+    }
 
-.position-caption {
-  height: 70%;
-  position: absolute;
-  bottom: 15%;
-  top: 15%;
-  padding: 0;
+    .position-caption {
+      height: 70%;
+      position: absolute;
+      bottom: 15%;
+      top: 15%;
+      padding: 0;
+    }
+  }
 }
