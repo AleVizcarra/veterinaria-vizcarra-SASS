@@ -173,9 +173,9 @@ p {
   grid-template-areas: "navegador navegador navegador navegador navegador navegador navegador" "hero hero hero hero hero hero hero" "main main main main main main main" "aside aside aside aside aside aside aside" "tech tech tech tech tech tech tech" "reviews reviews reviews reviews reviews reviews reviews" "footer footer footer footer footer footer footer";
   column-gap: 20px; }
   .grid-home .hero {
-    background-image: url(../public/img/dog.jpg), linear-gradient(152deg, #79cadb 0%, #e898e3 100%);
+    background-image: url(../public/img/dog-mobile.jpg), linear-gradient(152deg, #79cadb 0%, #e898e3 100%);
     background-size: cover;
-    background-position: left -190px top 115px;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-bottom: 30px;

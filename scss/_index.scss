@@ -16,14 +16,15 @@
   column-gap: 20px;
 
   .hero {
-    background-image: url(../public/img/dog.jpg),
+    background-image: url(../public/img/dog-mobile.jpg),
       linear-gradient(
         152deg,
         rgba(121, 202, 219, 1) 0%,
         rgba(232, 152, 227, 1) 100%
       );
     background-size: cover;
-    background-position: left -190px top 115px;
+    // background-position: left -190px top 115px;
+    background-position: center; //*****
     background-repeat: no-repeat;
     background-attachment: fixed;
 
