@@ -1,51 +1,4 @@
 /* ======= MEDIA QUERIES ======= */
-@media (max-width: 300px) {
-  .grid-home {
-    .hero {
-      background-position: left -190px top 160px;
-
-      & div {
-        .hero__slogan {
-          font-size: 1.8rem;
-        }
-
-        .hero__text {
-          font-size: 1.1rem;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 540px) and (min-height: 600px) {
-  .grid-home {
-    .hero {
-      justify-content: center;
-
-      & div {
-        width: 70%;
-        margin: 0;
-        top: 30px;
-      }
-    }
-  }
-}
-
-@media (max-height: 600px) {
-  .grid-home {
-    .hero {
-      & div {
-        .hero__slogan {
-          font-size: 1.7rem;
-        }
-
-        .hero__text {
-          font-size: 1rem;
-        }
-      }
-    }
-  }
-}
 
 @media (min-width: 400px) {
   .reviews-section {
@@ -100,8 +53,33 @@
 }
 
 @media (min-width: 600px) {
-  .hero {
-    background-position: left -40px top 115px;
+  .grid-home {
+    .hero {
+      background-image: url(../public/img/dog.jpg),
+        linear-gradient(
+          152deg,
+          rgba(121, 202, 219, 1) 0%,
+          rgba(232, 152, 227, 1) 100%
+        );
+
+      background-position: left -40px top 115px;
+
+      align-items: flex-start;
+
+      & div {
+        text-align: center;
+        position: relative;
+        top: 40px;
+
+        .hero__slogan {
+          font-weight: 600;
+        }
+
+        .hero__text {
+          display: block;
+        }
+      }
+    }
   }
 
   .navbar-home {
@@ -150,9 +128,10 @@
       align-items: flex-start;
 
       & div {
+        text-align: left;
         width: 50%;
-        margin: 0;
-        top: 150px;
+        margin-right: 20px;
+        top: 140px;
 
         .hero__slogan {
           font-size: 2.3rem;

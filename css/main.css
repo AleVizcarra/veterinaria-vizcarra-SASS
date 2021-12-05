@@ -182,22 +182,23 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     grid-area: hero; }
     .grid-home .hero div {
-      width: 100%;
+      width: 90%;
       height: auto;
+      margin: 0 auto;
       color: #fff;
       opacity: 0;
-      position: relative;
-      top: 20px;
+      text-align: center;
       animation: opacity 2s 0.5s 1;
       animation-fill-mode: forwards; }
       .grid-home .hero div .hero__slogan {
+        font-size: 2rem;
         font-weight: 600; }
       .grid-home .hero div .hero__text {
-        font-size: 1rem; }
+        display: none; }
 
 @keyframes opacity {
   0% {
@@ -607,28 +608,6 @@ p {
           height: 35px; }
 
 /* ======= MEDIA QUERIES ======= */
-@media (max-width: 300px) {
-  .grid-home .hero {
-    background-position: left -190px top 160px; }
-    .grid-home .hero div .hero__slogan {
-      font-size: 1.8rem; }
-    .grid-home .hero div .hero__text {
-      font-size: 1.1rem; } }
-
-@media (min-width: 540px) and (min-height: 600px) {
-  .grid-home .hero {
-    justify-content: center; }
-    .grid-home .hero div {
-      width: 70%;
-      margin: 0;
-      top: 30px; } }
-
-@media (max-height: 600px) {
-  .grid-home .hero div .hero__slogan {
-    font-size: 1.7rem; }
-  .grid-home .hero div .hero__text {
-    font-size: 1rem; } }
-
 @media (min-width: 400px) {
   .reviews-section .position-item {
     height: 60%;
@@ -658,8 +637,18 @@ p {
       margin-left: 35px; } }
 
 @media (min-width: 600px) {
-  .hero {
-    background-position: left -40px top 115px; }
+  .grid-home .hero {
+    background-image: url(../public/img/dog.jpg), linear-gradient(152deg, #79cadb 0%, #e898e3 100%);
+    background-position: left -40px top 115px;
+    align-items: flex-start; }
+    .grid-home .hero div {
+      text-align: center;
+      position: relative;
+      top: 40px; }
+      .grid-home .hero div .hero__slogan {
+        font-weight: 600; }
+      .grid-home .hero div .hero__text {
+        display: block; }
   .navbar-home {
     font-size: 4.3rem;
     padding-bottom: 0.3rem;
@@ -682,9 +671,10 @@ p {
       justify-content: flex-end;
       align-items: flex-start; }
       .grid-home .hero div {
+        text-align: left;
         width: 50%;
-        margin: 0;
-        top: 150px; }
+        margin-right: 20px;
+        top: 140px; }
         .grid-home .hero div .hero__slogan {
           font-size: 2.3rem; }
   /* ***** NOSOTROS ***** */
