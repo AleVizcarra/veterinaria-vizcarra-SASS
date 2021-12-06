@@ -173,6 +173,7 @@ p {
   grid-template-areas: "navegador navegador navegador navegador navegador navegador navegador" "hero hero hero hero hero hero hero" "main main main main main main main" "aside aside aside aside aside aside aside" "tech tech tech tech tech tech tech" "reviews reviews reviews reviews reviews reviews reviews" "footer footer footer footer footer footer footer";
   column-gap: 20px; }
   .grid-home .hero {
+    height: 77vh;
     background-image: url(../public/img/dog-mobile.jpg), linear-gradient(152deg, #79cadb 0%, #e898e3 100%);
     background-size: cover;
     background-position: center;
@@ -608,6 +609,10 @@ p {
           height: 35px; }
 
 /* ======= MEDIA QUERIES ======= */
+@media (min-width: 345px) {
+  .grid-home .hero {
+    height: 82.7vh; } }
+
 @media (min-width: 400px) {
   .reviews-section .position-item {
     height: 60%;
@@ -638,6 +643,7 @@ p {
 
 @media (min-width: 600px) {
   .grid-home .hero {
+    height: 81vh;
     background-image: url(../public/img/dog.jpg), linear-gradient(152deg, #79cadb 0%, #e898e3 100%);
     background-position: left -40px top 115px;
     align-items: flex-start; }
@@ -667,6 +673,7 @@ p {
   .grid-home {
     grid-template-areas: "navegador navegador navegador navegador navegador navegador navegador" "hero hero hero hero hero hero hero" ". main main main main main ." ". aside aside aside aside aside ." "tech tech tech tech tech tech tech" "reviews reviews reviews reviews reviews reviews reviews" "footer footer footer footer footer footer footer"; }
     .grid-home .hero {
+      height: 85vh;
       background-position: center;
       justify-content: flex-end;
       align-items: flex-start; }
