@@ -611,7 +611,7 @@ p {
 /* ======= MEDIA QUERIES ======= */
 @media (min-width: 345px) {
   .grid-home .hero {
-    height: 82.7vh; } }
+    height: 83vh; } }
 
 @media (min-width: 400px) {
   .reviews-section .position-item {
