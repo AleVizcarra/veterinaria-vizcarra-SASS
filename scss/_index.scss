@@ -29,8 +29,6 @@
     // ==========================
     @supports (-webkit-touch-callout: none) {
       background-attachment: scroll;
-      position: relative;
-      bottom: 35px;
     }
 
     @supports not (-webkit-touch-callout: none) {
@@ -56,7 +54,7 @@
 
       @supports (-webkit-touch-callout: none) {
         position: relative;
-        top: 35px;
+        top: 40px;
       }
 
       .hero__slogan {

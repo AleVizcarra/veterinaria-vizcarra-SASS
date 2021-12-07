@@ -187,9 +187,7 @@ p {
     grid-area: hero; }
     @supports (-webkit-touch-callout: none) {
       .grid-home .hero {
-        background-attachment: scroll;
-        position: relative;
-        bottom: 35px; } }
+        background-attachment: scroll; } }
     @supports not (-webkit-touch-callout: none) {
       .grid-home .hero {
         background-attachment: fixed; } }
@@ -205,7 +203,7 @@ p {
       @supports (-webkit-touch-callout: none) {
         .grid-home .hero div {
           position: relative;
-          top: 35px; } }
+          top: 40px; } }
       .grid-home .hero div .hero__slogan {
         font-size: 2rem;
         font-weight: 600; }
