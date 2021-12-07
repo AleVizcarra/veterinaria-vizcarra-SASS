@@ -200,6 +200,10 @@ p {
       text-align: center;
       animation: opacity 2s 0.5s 1;
       animation-fill-mode: forwards; }
+      @supports (-webkit-touch-callout: none) {
+        .grid-home .hero div {
+          position: relative;
+          top: 20px; } }
       .grid-home .hero div .hero__slogan {
         font-size: 2rem;
         font-weight: 600; }
