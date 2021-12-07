@@ -26,7 +26,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // ==========================
+    @supports (-webkit-touch-callout: none) {
+      background-attachment: scroll;
+    }
+
+    @supports not (-webkit-touch-callout: none) {
+      background-attachment: fixed;
+    }
+    // ==========================
 
     margin-bottom: 30px;
 

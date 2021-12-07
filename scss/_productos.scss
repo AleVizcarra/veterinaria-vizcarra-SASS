@@ -23,7 +23,6 @@
 
   .productos-container {
     width: 100%;
-    // @include flex(row, wrap, space-evenly, stretch);
 
     display: grid;
     grid-template-columns: 1fr;

@@ -178,7 +178,6 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -186,6 +185,12 @@ p {
     justify-content: center;
     align-items: center;
     grid-area: hero; }
+    @supports (-webkit-touch-callout: none) {
+      .grid-home .hero {
+        background-attachment: scroll; } }
+    @supports not (-webkit-touch-callout: none) {
+      .grid-home .hero {
+        background-attachment: fixed; } }
     .grid-home .hero div {
       width: 90%;
       height: auto;
